@@ -16,15 +16,17 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <!-- AdBeacon -->
-        <script>
-            function adBeaconStartRenderingScript() {
-                let t = document.createElement("script");
-                t.src = "https://test2.adbeacon.com/public/os/1?" + Date.now(),
-                    t.async = !0,
-                    document.head.append(t);
-            }
-            document.addEventListener("DOMContentLoaded", adBeaconStartRenderingScript);
-            </script>
+       <!-- AdBeacon -->
+       <script>
+        function adBeaconStartRenderingScript() {
+            let t = document.createElement("script");
+            t.src = "https://test2.adbeacon.com/public/os/1?" + Date.now(),
+                t.async = !0,
+                document.head.append(t);
+        }
+        document.addEventListener("DOMContentLoaded", adBeaconStartRenderingScript);
+        </script>
+        <!-- End AdBeacon -->
             <!-- End AdBeacon -->
 
         

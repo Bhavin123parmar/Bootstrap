@@ -18,7 +18,8 @@
     <!-- Core theme CSS news (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <!-- AdBeacon -->
-    <script>
+       <!-- AdBeacon -->
+       <script>
         function adBeaconStartRenderingScript() {
             let t = document.createElement("script");
             t.src = "https://test2.adbeacon.com/public/os/1?" + Date.now(),
@@ -26,7 +27,8 @@
                 document.head.append(t);
         }
         document.addEventListener("DOMContentLoaded", adBeaconStartRenderingScript);
-    </script>
+        </script>
+        <!-- End AdBeacon -->
     <!-- End AdBeacon -->
 
 
@@ -201,7 +203,7 @@
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
     <script>
-        var adBeaconCheckoutData = {
+         window.adBeaconCheckoutData = {
             "order_id": "ABC123",
             "order_date_time": "2023-01-01 16:00:00", // UTC Datetime, Required
             "order_update_date_time": "2023-01-01 16:00:00", // UTC Datetime, Optional
