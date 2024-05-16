@@ -17,16 +17,15 @@
         <link href="css/styles.css" rel="stylesheet" />
          <!-- AdBeacon -->
         <script>
-        function adBeaconStartRenderingScript() {
-            let t = document.createElement("script");
-            t.src = "https://app.adbeacon.com/os/k6ct0ltx21tl3tz8?" + Date.now(),
-                t.async = !0,
-                document.head.append(t);
-        }
-        document.addEventListener("DOMContentLoaded", adBeaconStartRenderingScript);
-        
+            function adBeaconStartRenderingScript() {
+                let t = document.createElement("script");
+                t.src = "http://localhost/adbeacon-saas/public/os/c82bfa04d5740c35?" + Date.now(),
+                    t.async = !0,
+                    document.head.append(t);
+            }
+            document.addEventListener("DOMContentLoaded", adBeaconStartRenderingScript);
         </script>
-        <!-- End AdBeacon -->
+   
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -152,9 +151,9 @@
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+                    <a class="btn btn-xl btn-outline-light" href="chekout-order.html>
                         <i class="fas fa-download me-2"></i>
-                        Free Download!
+                            Order Now
                     </a>
                 </div>
             </div>
